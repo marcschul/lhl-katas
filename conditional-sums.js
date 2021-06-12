@@ -20,7 +20,7 @@ const conditionalSum = (values, condition) => {
   }
 }
 
-console.log(conditionalSum([1, 2, 3, 4, 5], "even"));
-console.log(conditionalSum([1, 2, 3, 4, 5], "odd"));
-console.log(conditionalSum([13, 88, 12, 44, 99], "even"));
-console.log(conditionalSum([], "odd"));
+console.log(conditionalSum([1, 2, 3, 4, 5], "even")); // expected output: 6
+console.log(conditionalSum([1, 2, 3, 4, 5], "odd")); // expected output: 9
+console.log(conditionalSum([13, 88, 12, 44, 99], "even")); // expected output: 144
+console.log(conditionalSum([], "odd")); // expected output: 0
