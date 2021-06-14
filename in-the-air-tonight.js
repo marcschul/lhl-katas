@@ -1,6 +1,5 @@
 const checkAir = (samples, threshold) => {
   let polluted = 0;
-
   for (let value of samples) {
     value === 'dirty' ? polluted++ : null; 
   } 
