@@ -12,6 +12,7 @@ const makeCase = (input, styles) => {
   typeof styles === 'string' ?  strArr.push(styles) : strArr = strArr.concat(styles);
   let result = '';
 
+  // 1. converts input to camel, pascal, snake, kebab, or title casing style
   for (let value of strArr) {
     switch (true) {
       case (value === 'camel'):
@@ -34,6 +35,7 @@ const makeCase = (input, styles) => {
     }
   }
 
+  // 2. converts input or result input to vowel or consonant
   for (let value of strArr) {
     switch (true) {
       case (value === 'vowel'):
@@ -47,6 +49,7 @@ const makeCase = (input, styles) => {
     }
   }
 
+  // 3. converts input or result input to upper or lower case letters
   for (let value of strArr) {
     switch (true) {
       case (value === 'upper'):
