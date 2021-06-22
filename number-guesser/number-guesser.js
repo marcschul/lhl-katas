@@ -3,7 +3,7 @@ let prompt = require("prompt-sync")();
 // code below (replace this example)
 // let answer = prompt("Guess a number: ");
 // console.log("You answered: " + answer);
-// ---------------------------------------------
+
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
@@ -13,7 +13,6 @@ let guess = [];
 let correct = null;
 let numOfGuess = 0;
 
-// if array does not contain value, push value, otherwise do nothing.
 for (let i = 0; correct !== true; i++) {
 
   let answer = prompt("Guess a number:  ");
