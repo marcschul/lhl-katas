@@ -10,25 +10,29 @@ function getRandomInt(max) {
 
 let num = getRandomInt(100);
 let guess = [];
+let correct = null;
+let numOfGuess = 0;
 
-let answer = prompt("Guess a number:  ");
+// if array does not contain value, push value, otherwise do nothing.
+for (let i = 0; correct !== true; i++) {
 
-switch (true) {
-  case (answer > num):
-    console.log('Too High!');
-    guess.push(answer);
-    break;
-  case (answer < num):
-    console.log('Too Low');
-    guess.push(answer);
-    break;
-  case (answer === num.toString()):
-    console.log('You got it!');
-    guess.push(answer);
-    break;
-  default:
-    console.log('Not a number!');
-    break;
+  let answer = prompt("Guess a number:  ");
+  switch (true) {
+    case (answer > num):
+      guess.includes(answer) ? null : guess.push(answer);
+      console.log('Too High!');
+      break;
+    case (answer < num):
+      guess.includes(answer) ? null : guess.push(answer);
+      console.log('Too Low');
+      break;
+    case (answer === num.toString()):
+      guess.includes(answer) ? null : guess.push(answer);
+      console.log('You got it! You took ' + guess.length + ' attempt(s)!');
+      correct = true;
+      break;
+    default:
+      console.log('Not a number!');
+      break;
+  }
 }
-
-console.log(guess);
