@@ -1,0 +1,15 @@
+{
+  "name": "number-guesser",
+  "version": "1.0.0",
+  "dependencies": {
+    "prompt-sync": "^4.1.5"
+  },
+  "description": "",
+  "main": "number-guesser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
